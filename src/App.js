@@ -1,9 +1,13 @@
 import './App.css';
-import Home from './Components/Hero';
+import Nav from "./Components/Nav"
+import Projects from './Components/Projects';
+import Hero from './Components/Hero';
 function App() {
   return (
     <>
-      <Home />
+      <Nav />
+      <Hero />
+
     </>
       
   );
