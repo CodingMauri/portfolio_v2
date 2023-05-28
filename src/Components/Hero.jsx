@@ -4,24 +4,35 @@ import Projects from "./Projects";
 
 function Hero() {
   return (
-    <div className="w-full h-screen flex justify-center items-center ">
-      <div className="bg-gray-400 w-1/3 flex flex-col justify-center items-center h-screen ">
-        <h1 className="font-bold text-3xl text-white ">Mauricio Alvarenga</h1>
-        <Typewriter
-          options={{
-            strings: ["Front-End Developer", "Software Engineer"],
-            loop: true,
-            autoStart: true,
-          }}
-        />
+    <div className="w-full min-h-screen flex flex-col justify-center ">
+      <div className="w-1/2 pl-10">
+        
+
+        <div className="flex  flex-col">
+          <h3 className = "text-md text-white pb-6">Hi I'm</h3>
+          <h1 className=" text-3xl text-white float-left mb-4 font-tilt font-extrabold">
+            Mauricio Alvarenga
+          </h1>
+          <div className="text-white items-center font-josefin font-semibold p-1 ">
+            <Typewriter
+              className="text-wh"
+              options={{
+                strings: ["Front-End Developer", "Software Engineer"],
+                loop: true,
+                autoStart: true,
+              }}
+            />
+          </div>
+        </div>
       </div>
-      <div className="w-3/4">
-      <h1 className="text-4xl font-bold mb-8 text-right absolute top-0 right-0 transform -translate-y-full">
-          Projects
-        </h1>
-      
-        <Projects />
-      </div>
+      {/* <p className="text-md mx-auto text-white mt-9 p-2 font-josefin ">
+        Bay Area Full-Stack Developer with a passion for developing simple, yet
+        engaging applications. I love seeing my creativity come to fruition into
+        beautiful tech-stacks.
+        <br />
+        When I'm not coding, you can find me exploring the backroads on my
+        motorcycle or making some fire latte art.
+      </p> */}
     </div>
   );
 }

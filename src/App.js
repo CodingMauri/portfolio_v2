@@ -1,15 +1,15 @@
-import './App.css';
-import Nav from "./Components/Nav"
-import Projects from './Components/Projects';
-import Hero from './Components/Hero';
+import { Routes } from "react-router-dom";
+import "./App.css";
+// import Nav from "./Components/Nav"
+import Home from "./Components/Home";
+import { Route } from "react-router-dom";
 function App() {
   return (
-    <>
-      <Nav />
-      <Hero />
-
-    </>
-      
+    <div className = "bg-gradient-to-r from-[#29323c] to-[#485563]">
+      <Routes>
+        <Route path = "/" element = {<Home />} />
+      </Routes>
+    </div>
   );
 }
 

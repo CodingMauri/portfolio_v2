@@ -1,6 +1,10 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projectImage from "../assets/Images/netflix-clone-image.png";
+import projectImage2 from "../assets/Images/retrodash.png";
+import projectImage3 from "../assets/Images/JupiterDeals.png";
+import projectImage4 from "../assets/Images/netflix.png";
+
 function Projects() {
   const projectData = [
     {
@@ -8,26 +12,33 @@ function Projects() {
       project: "Netflix-Clone",
       url: "https://netfli-x-clone.netlify.app/",
       github: "https://github.com/CodingMauri/n-clone2",
+      about:
+        "Full-Stack application using react and tailwind for the front-end and using google firebase for backend hosting and express for the framework.",
 
       image: projectImage,
     },
     {
       id: 2,
 
-      project: "Ye ye ",
+      project: "RetroDash",
       url: "https://netfli-x-clone.netlify.app/",
       github: "https://github.com/CodingMauri/n-clone2",
+      about:
+      "Full-Stack application using react and tailwind for the front-end and using google firebase for backend hosting and express for the framework.",
 
-      image: projectImage,
+
+      image: projectImage2,
     },
     {
       id: 3,
 
-      project: "Netflix-Clone",
+      project: "JupiterDeals",
       url: "https://netfli-x-clone.netlify.app/",
       github: "https://github.com/CodingMauri/n-clone2",
+      about:
+      "Full-Stack application using react and tailwind for the front-end and using google firebase for backend hosting and express for the framework.",
 
-      image: projectImage,
+      image: projectImage3,
     },
     {
       id: 4,
@@ -35,21 +46,25 @@ function Projects() {
       project: "Netflix-Clone",
       url: "https://netfli-x-clone.netlify.app/",
       github: "https://github.com/CodingMauri/n-clone2",
+      about:
+      "Full-Stack application using react and tailwind for the front-end and using google firebase for backend hosting and express for the framework.",
 
-      image: projectImage,
+      image: projectImage4,
     },
   ];
   return (
-    <>
-      <div className="flex relative justify-center items-center h-screen m-9 p-2">
+    <div className = "w-[80%] min-h-screen mx-auto">
 
-        <div className = "w-[90%] top-4 bottom-1 h-full grid grid-cols-2 gap-11 absolute p-6 ">
+      <h1 className ="text-2xl w-full bg-red text-white bolded font-tilt underlined pb-4">Projects</h1>
+
+      <div className="flex relative justify-center items-center m-8 p-2 h-[700px]">
+        <div className="w-[90%] top-0  h-full grid grid-cols-2 gap-11 absolute p-6 ">
           {projectData.map((project) => {
             return <ProjectCard key={project.id} project={project} />;
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
