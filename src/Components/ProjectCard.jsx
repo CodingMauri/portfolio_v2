@@ -3,42 +3,28 @@ import React from "react";
 import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
-
- 
   return (
     <motion.div
-      className="w-full h-full relative"
-      whileHover={{ scale: 1.1 }}
-      transition={{ duration: 0.5 }}
+      className="w-full flex flex-row h-full "
+      // whileHover={{ scale: 1.1 }}
+      // transition={{ duration: 0.5 }}
     >
-      <img
-        className=" object-cover w-full h-full rounded-2xl shadow-2xl"
-        src={project.image}
-        alt={project.project}
-      />
-
-      <div className="absolute cursor-pointer inset-0 bg-black opacity-0 hover:opacity-75 rounded-2xl transition-opacity duration-300">
-        <div className="flex items-center justify-center h-full">
-          <div className="text-white text-center">
-            <h3 className="text-lg font-semibold">{project.project}</h3>
-            <p className = "text-sm p-6  ">{project.about}</p>
-            <div className = "mx-auto py-3 flex justify-center w-full h-full ">
-              <motion.button whileHover = {{scale:0.9}} transition = {{duration:0.3}} className="px-4 py-2 font-medium text-white rounded mr-2 bg-red-700 ">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm pt-8"
-                >
-                  Github Repo
-                </a>
-              </motion.button>
-              <motion.button  whileHover = {{scale:0.9}} transition = {{duration:0.3}} className="px-4 py-2 font-medium text-white rounded  bg-gray-700  ">
-                Live
-              </motion.button>
-            </div>
-          </div>
+      
+        <img
+          src={project.image}
+          className="object-cover w-[46%] h-3/6 rounded-lg"
+          alt={project.project}
+        />
+      <div className = "w-[55%] h-fit   mt-[7rem] flex flex-col  items-center justify-center p-5 bottom-0">
+          <h2 className = 'w-full text-md font-bold pb-2 '>{project.project}</h2>
+          <p className = "text-lg ">{project.about}</p>
+        
+        <div className = "flex flex-row w-full pt-8">
+          <button className = "px-4 py-2 font-medium rounded mr-2 outline outline-white bg-gray-600">
+            <a href = {project.github} target = "_blank" rel = "noopener noreferrer" className  = "text-sm pt-8">Github Repo</a>
+          </button>
         </div>
+
       </div>
     </motion.div>
   );

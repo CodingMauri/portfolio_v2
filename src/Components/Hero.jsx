@@ -1,38 +1,33 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import Projects from "./Projects";
-
 function Hero() {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center ">
-      <div className="w-1/2 pl-10">
-        
+    <div className="w-1/2 min-h-screen mx-auto  ">
+      <div className=" text-center w-full h-full flex flex-col justify-center items-center  pt-20 ">
+        <h3 className="text-5xl capitalize font-josefina">Hi i'm</h3>
 
-        <div className="flex  flex-col">
-          <h3 className = "text-md text-white pb-6">Hi I'm</h3>
-          <h1 className=" text-3xl text-white float-left mb-4 font-tilt font-extrabold">
-            Mauricio Alvarenga
-          </h1>
-          <div className="text-white items-center font-josefin font-semibold p-1 ">
-            <Typewriter
-              className="text-wh"
-              options={{
-                strings: ["Front-End Developer", "Software Engineer"],
-                loop: true,
-                autoStart: true,
-              }}
-            />
-          </div>
+        <span className="text-9xl bold font-blanks capitalize ">
+          {" "}
+          Mauricio Alvarenga
+        </span>
+        <div className="text-5xl leading-snug capitalize">
+          <Typewriter
+            options={{
+              strings: ["Front-end Developer", "Software Engineer", "ye ye "],
+
+              autoStart: true,
+              loop: true,
+            }}
+          ></Typewriter>
+        </div>
+        <div className="w-full text-md min-h-[100px] capitalize flex flex-col justify-center items-center ">
+          <p className="pt-7">
+            Bay Area Front-end Developer with a passion for creating engaging
+            yet simple applications. I have a knack for solving problems,
+            helping others and keeping calm under pressure.
+          </p>
         </div>
       </div>
-      {/* <p className="text-md mx-auto text-white mt-9 p-2 font-josefin ">
-        Bay Area Full-Stack Developer with a passion for developing simple, yet
-        engaging applications. I love seeing my creativity come to fruition into
-        beautiful tech-stacks.
-        <br />
-        When I'm not coding, you can find me exploring the backroads on my
-        motorcycle or making some fire latte art.
-      </p> */}
     </div>
   );
 }

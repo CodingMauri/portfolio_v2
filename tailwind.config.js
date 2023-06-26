@@ -5,7 +5,15 @@ module.exports = {
     extend: {
       fontFamily:{
         josefin: ["Josefin Sans"],
-        tilt: ["Tilt Warp"]
+        tilt: ["Tilt Warp"],
+        blanks: ["Blank's Script"]
+      },
+      fontFace:{
+        blanks:{
+          
+          'font-family': ["Blank's Script"],
+          src: "url('src/assets/Images/fonts/BlanksscriptpersonaluseBdit-jEM6O.otf') format('truetype')",
+        }
       }
     },
   },

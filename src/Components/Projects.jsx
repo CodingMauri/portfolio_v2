@@ -55,10 +55,10 @@ function Projects() {
   return (
     <div className = "w-[80%] min-h-screen mx-auto">
 
-      <h1 className ="text-2xl w-full bg-red text-white bolded font-tilt underlined pb-4">Projects</h1>
+      <h1 className ="text-2xl w-full bg-red font-thin text-white font-tilt underlined pb-4">my works </h1>
 
       <div className="flex relative justify-center items-center m-8 p-2 h-[700px]">
-        <div className="w-[90%] top-0  h-full grid grid-cols-2 gap-11 absolute p-6 ">
+        <div className="w-full h-full ">
           {projectData.map((project) => {
             return <ProjectCard key={project.id} project={project} />;
           })}

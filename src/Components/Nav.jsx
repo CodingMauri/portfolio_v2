@@ -26,7 +26,7 @@ export default function Nav() {
     scroll()
   })
   return (
-    <div>
+    <div >
       
     </div>
   );
